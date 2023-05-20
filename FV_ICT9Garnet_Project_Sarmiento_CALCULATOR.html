@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Length Conversion Calculator</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+	<style type="text/css">
+		.title{
+			font-family: 'Concert One', cursive;
+			text-align: center;
+			border: 5px solid #B38481;
+			border-radius: 4px;
+			padding: 14px 40px;
+			margin: 100px;
+			margin-left: 100px;
+			margin-right: 100px;
+			margin-top: 200px;
+			color: #CF9EA2;
+			text-shadow: 2px 2px 3px #7F4E52;
+			font-size: 35px;
+		}
+		.button{
+			border: 5px solid #B38481;
+			border-radius: 4px;
+			padding: 14px 40px;
+			color: #7F4E52;
+			background-color: #FBCFCD;
+			text-shadow: -1px 0 #CF9EA2, 0 1px #CF9EA2, 1px 0 #CF9EA2, 0 -1px #CF9EA2;
+			font-size: 20px;
+		}
+		.input{
+			border: 5px solid #B38481;
+			border-radius: 4px;
+			color: #7F4E52;
+			background-color: #FBCFCD;
+			padding: 10px 15px;
+		}
+		.line{
+			border: 3px dashed #F2D4D7;
+		}
+	</style>
+</head>
+<body style="background-image: url(https://i.pinimg.com/originals/95/09/af/9509af0ca56ed5286ce9b3a4a8bccadf.jpg); background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed;">
+	<div class="container bg-white title">
+			<h1>🤍 Length Conversion Calculator 🤍</h1>
+		<script type="text/javascript">
+			alert('Length Conversion Calculator!')
+		</script>
+		<hr class="line">
+		Value in Millimeter : <input class="input" type="number" id="unitOne" value="0">
+		<hr class="line">
+		Click to convert :
+		<button onclick="cm()" class="button">Centimeters</button>
+		<button onclick="m()" class="button">Meters</button>
+		<button onclick="km()" class="button">Kilometers</button>
+</body>
+		<script type="text/javascript">
+			let x;
+			let y;
+			function cm(){
+				let x = parseInt(document.getElementById("unitOne").value);
+				alert(x / 10);
+			}
+			function m(){
+				let x = parseInt(document.getElementById("unitOne").value);
+				alert(x / 1000);
+			}
+			function km(){
+				let x = parseInt(document.getElementById("unitOne").value);
+				alert(x / 1000000);
+			}
+		</script>
+	</div>
+</html>
